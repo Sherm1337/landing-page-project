@@ -1,18 +1,25 @@
 body {
     display: flex;
     flex-direction: column;
- margin: 0;
- border: solid #1F2937 0 200px;
-
+    margin: 0;
+    border: solid #1F2937 0 200px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
+/*This is the start of the header*/
 header {
     background-color: #1F2937;
     font-size: 24px;
     color: #F9FAF8;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
+    padding-left: 400px;
+    padding-right: 400px;
+}
+.logo {
+    font-weight: bold;
 }
 ul.linklist {
     display: flex;
@@ -24,51 +31,148 @@ a {
     color: #E5E7EB;
     text-decoration: none;
 }
+/*This container is for the three large sections*/
+.container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+/*This is the start of the second section*/
 .dsection {
     background-color: #1F2937;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     color: #F9FAF8;
-    padding-left: 200px;
-
+    padding-left: 400px;
+    padding-right: 400px;
 }
 .subsect {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding-left: 40px;
 }
 #placeholder {
     background-color: gray;
     color:white;
-    text-align: center;
+    margin: auto;
+    display: flex;
+    width: 520px;
+    height: 240px;
+    align-items: center;
     justify-content: center;
-    margin: 100px 50px;
-    padding: 100px 150px
 }
 #maintitle {
     text-align: left;
     font-size: 48px;
     font-weight: 900;
     width: 400px;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 }
 #undertitle {
     color: #E5E7EB;
     font-size: 18px;
     width: 400px;
-    margin-top: 5px;
+    margin-top: 2px;
+    margin-bottom: 0;
 }
 #signup {
     background-color: #3882F6;
     color: #F9FAF8;
-    border-radius: 10px;
-    padding: 5px 20px;
+    border-radius: 7px;
+    padding: 7px 25px;
     border: none;
     font-weight: bold;
     display: flex;
     align-self: flex-start;
-    margin-bottom: 10px;
-    margin-top: 0;
+    margin-bottom: 100px;
+    margin-top: 5px;
+}
+/*this is the start of the third section*/
+.wsection {
+    background-color: white;
+    color: gray;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 400px;
+    padding-right: 400px;
+}
+#wsectitle {
+    color: #1F2937;
+    font-size: 36px;
+    font-weight: bolder;
+    margin-top: 50px;
+}
+.imglist {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+}
+#illimg {
+    width: 150px;
+    height: 150px;
+    border: solid 5px #3882F6;
+    border-radius: 15px;
+    margin: 0 25px 0 25px;
+}
+#subtxt {
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    margin: -25px 25px 0 25px;
+    border: solid 5px white;
+}
+/*This is the start of the third section*/
+.gsection {
+    background-color: #E5E7EB;
+    color: #1F2937;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 400px;
+}
+#quote {
+    font-size: 36px;
+    font-style: italic;
+}
+#quote b {
+    font-size: 24px;
+    float: right;
+}
+/*This is the start of the footer*/
+footer {
+    background-color: white;
+    padding: 2px;
+    margin-top: auto;
+}
+.ftcont {
+    margin: 100px 400px;
+    background-color: #3882F6;
+    display: flex;
+    color: white;
+    padding: 50px 100px;
+    border: solid #3882F6;
+    border-radius: 15px;
+}
+.ftpara b {
+    font-size: 32px;
+}
+.ftpara p {
+    font-size: 24px;
+}
+.ftcont a {
+    background-color: #3882F6;
+    color: #F9FAF8;
+    font-size: 24px;
+    border-radius: 10px;
+    border: solid 2px white;
+    padding: 7px 30px;
+    font-weight: bolder;
+    display: flex;
+    align-self: center;
+    margin-left: 70px;
 }
